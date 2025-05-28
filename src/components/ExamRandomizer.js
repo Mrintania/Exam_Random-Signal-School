@@ -280,14 +280,14 @@ const ExamRandomizer = () => {
                         <div
                             key={optIndex}
                             className={`p-3 rounded-md border transition-colors duration-200 ${showAnswers && isCorrect
-                                    ? 'bg-green-50 border-green-300 text-green-800'
-                                    : 'bg-gray-50 border-gray-200 hover:bg-blue-50 hover:border-blue-300'
+                                ? 'bg-green-50 border-green-300 text-green-800'
+                                : 'bg-gray-50 border-gray-200 hover:bg-blue-50 hover:border-blue-300'
                                 }`}
                         >
                             <div className="flex items-center">
                                 <div className={`w-8 h-8 rounded-md flex items-center justify-center text-sm font-semibold mr-3 ${showAnswers && isCorrect
-                                        ? 'bg-green-600 text-white'
-                                        : 'bg-blue-600 text-white'
+                                    ? 'bg-green-600 text-white'
+                                    : 'bg-blue-600 text-white'
                                     }`}>
                                     {optionLabel}
                                 </div>
