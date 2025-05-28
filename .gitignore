@@ -1,0 +1,253 @@
+# ======================================
+# .gitignore สำหรับระบบสุ่มข้อสอบ
+# โรงเรียนทหารสื่อสาร กรมการทหารสื่อสาร
+# ======================================
+
+# Dependencies และ Node Modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp/
+.pnp.js
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# React Build Files
+build/
+dist/
+out/
+
+# Environment Variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Testing Coverage
+coverage/
+.nyc_output/
+*.lcov
+
+# Runtime และ Process Files
+.pm2/
+logs/
+*.log
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Cache Files
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+
+# IDE และ Editor Files
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.swp
+*.swo
+*~
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Windows
+*.exe
+*.msi
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ======================================
+# ไฟล์เฉพาะระบบข้อสอบ
+# ======================================
+
+# ไฟล์ข้อสอบที่มีข้อมูลสำคัญ (ปรับตามนีดส์)
+# Exam/
+# !Exam/sample/
+# !Exam/README.md
+
+# ไฟล์ Export ที่สร้างขึ้น
+exports/
+downloads/
+temp/
+*.tmp
+
+# ไฟล์ Backup
+*.bak
+*.backup
+*.old
+*.orig
+
+# Database Files (ถ้าใช้ในอนาคต)
+*.db
+*.sqlite
+*.sqlite3
+
+# ======================================
+# Development และ Build Tools
+# ======================================
+
+# Webpack
+.webpack/
+
+# Rollup
+.rollup.cache/
+
+# Vite
+.vite/
+
+# TypeScript (ถ้าใช้ในอนาคต)
+*.tsbuildinfo
+
+# ESLint
+.eslintcache
+
+# Prettier
+.prettiercache
+
+# Storybook
+.storybook-static/
+
+# ======================================
+# Deployment และ Production
+# ======================================
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Kubernetes
+*.yaml.local
+*.yml.local
+
+# CI/CD
+.github/
+.gitlab-ci.yml.local
+
+# Vercel
+.vercel/
+
+# Netlify
+.netlify/
+
+# ======================================
+# Security และ Credentials
+# ======================================
+
+# SSH Keys
+*.pem
+*.key
+*.crt
+*.p12
+
+# Config Files with Sensitive Data
+config/local.js
+config/production.js
+
+# JWT Secrets
+secrets/
+credentials/
+
+# ======================================
+# Archives และ Compressed Files
+# ======================================
+
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# ======================================
+# Documentation Build Files
+# ======================================
+
+docs/build/
+site/
+
+# ======================================
+# Monitoring และ Analytics
+# ======================================
+
+# Google Analytics
+.analytics/
+
+# Error Tracking
+.sentry/
+
+# Performance Monitoring
+.lighthouse/
+
+# ======================================
+# Custom Application Files
+# ======================================
+
+# Application Specific Logs
+server/logs/
+client/logs/
+
+# Upload Directory
+uploads/
+files/
+
+# Session Storage
+sessions/
+
+# Email Templates Cache
+email-cache/
+
+# Report Files
+reports/
+statistics/
+
+# ======================================
+# Development Utilities
+# ======================================
+
+# Package Lock Files (เก็บเฉพาะ npm)
+# yarn.lock
+# pnpm-lock.yaml
+
+# Local Configuration
+.local/
+local.config.js
+
+# Experimental Features
+experimental/
+prototype/
+
+# TODO และ Notes
+TODO.md
+NOTES.md
+.notes/
+
+# ======================================
+# End of .gitignore
+# ======================================
