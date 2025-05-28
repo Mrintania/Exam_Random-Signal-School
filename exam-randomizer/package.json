@@ -1,0 +1,83 @@
+{
+  "name": "exam-randomizer",
+  "version": "1.0.0",
+  "description": "ระบบสุ่มข้อสอบ - โรงเรียนทหารสื่อสาร กรมการทหารสื่อสาร",
+  "private": true,
+  "homepage": ".",
+  "main": "src/index.js",
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^14.5.2",
+    "lucide-react": "^0.263.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "server": "nodemon server/server.js",
+    "server:prod": "node server/server.js",
+    "dev": "concurrently \"npm run server\" \"npm start\"",
+    "dev:windows": "concurrently \"npm run server\" \"timeout 3 && npm start\"",
+    "install:all": "npm install && npm run create-exam-folder",
+    "create-exam-folder": "node -e \"const fs = require('fs'); const path = './Exam/01 ส.อ. เป็น จ.ส.อ.'; fs.mkdirSync(path, {recursive: true}); console.log('Created Exam folder structure');\"",
+    "health-check": "curl -f http://localhost:3001/api/health || echo 'Server not running'",
+    "create-sample": "curl -X POST http://localhost:3001/api/create-sample",
+    "lint": "npx eslint src/",
+    "format": "npx prettier --write src/",
+    "build:electron": "npm run build && npx electron-builder",
+    "postinstall": "npm run create-exam-folder"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "keywords": [
+    "exam",
+    "randomizer",
+    "education",
+    "thai-army",
+    "signal-school",
+    "react",
+    "nodejs"
+  ],
+  "author": {
+    "name": "Signal School, Royal Thai Army",
+    "email": "signal.school@army.mil.th"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-organization/exam-randomizer.git"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "proxy": "http://localhost:3001"
+}
