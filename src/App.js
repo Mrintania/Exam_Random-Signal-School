@@ -1,9 +1,7 @@
 // src/App.js
-// Main Application Component สำหรับระบบสุ่มข้อสอบ
-
 import React from 'react';
 import ExamRandomizer from './components/ExamRandomizer';
-import './App.css';
+// ไม่มี import './App.css'; แล้ว
 
 function App() {
   return (
