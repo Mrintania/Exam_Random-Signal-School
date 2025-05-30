@@ -468,7 +468,11 @@ const ModernExamRandomizer = () => {
                     <div className="flex items-center justify-between" style={{ height: '4rem' }}>
                         <div className="flex items-center space-x-4">
                             <div className="bg-gradient-blue-purple p-2 rounded-xl">
-                                <GraduationCap className="h-6 w-6 text-white" />
+                                <img
+                                    src="/siglogo.png"
+                                    alt="Logo"
+                                    className="h-6 w-6"
+                                />
                             </div>
                             <div>
                                 <h1 className="text-xl font-bold text-gray-800">ระบบสุ่มข้อสอบ</h1>
@@ -476,7 +480,7 @@ const ModernExamRandomizer = () => {
                             </div>
                         </div>
 
-                        <div className="flex items-center space-x-4">
+                        {/* <div className="flex items-center space-x-4">
                             <div className="hidden sm:flex items-center space-x-2 bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
                                 <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
                                 <span>ออนไลน์</span>
@@ -487,7 +491,7 @@ const ModernExamRandomizer = () => {
                             >
                                 <Menu className="h-5 w-5" />
                             </button>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </header>
@@ -656,7 +660,12 @@ const ModernExamRandomizer = () => {
                     <div className="text-center">
                         <div className="flex items-center justify-center space-x-3 mb-3">
                             <div className="bg-gradient-blue-purple p-2 rounded-lg">
-                                <Shield className="h-5 w-5 text-white" />
+                                <img
+                                    src="/siglogo.png"
+                                    alt="Logo"
+                                    className="h-5 w-5"
+
+                                />
                             </div>
                             <span className="text-lg font-bold text-gray-800">โรงเรียนทหารสื่อสาร</span>
                         </div>
